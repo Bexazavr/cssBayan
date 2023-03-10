@@ -1,0 +1,105 @@
+html,
+body,
+div,
+span,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+address,
+em,
+img,
+strong,
+sub,
+sup,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+label,
+details,
+footer,
+header,
+menu,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+ol,
+ul {
+  list-style: none;
+}
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+  font-family: 'Luckiest Guy', cursive;
+
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.bayan-container {
+  max-width: 60vw;
+  margin: 0 auto;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.bayan-title {
+  padding: 1.3rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 100;
+}
+.bayan-hr {
+  background-color: grey;
+  height: 2px;
+}
+
+.bayan-content {
+  color: blue;
+}
+
+.bayan-container:hover .bayan-content {
+  color: black;
+}
+
+.accordion-item {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.accordion-item-title {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
