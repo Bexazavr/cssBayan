@@ -103,22 +103,6 @@ html {
   height: 100%;
   margin-top: 2.5rem;
 }
-.bayan-container:hover .bayan-content {
-  color: black;
-}
-.bayan-container:hover .accordion-item-icon {
-  opacity: 1;
-}
-.accordion-item:hover .accordion-item-icon {
-  transform: rotate(180deg);
-  opacity: 1;
-}
-.accordion-item:hover .accordion-item-img {
-  opacity: 1;
-  scale: 1;
-  height: 100%;
-  margin-top: 2.5rem;
-}
 .item-label {
   cursor: pointer;
   display: flex;
@@ -151,6 +135,24 @@ html {
   align-self: center;
   transition: 0.2s ease-in;
 }
+@media (hover: hover) {
+  .bayan-container:hover .bayan-content {
+    color: black;
+  }
+  .bayan-container:hover .accordion-item-icon {
+    opacity: 1;
+  }
+  .accordion-item:hover .accordion-item-icon {
+    transform: rotate(180deg);
+    opacity: 1;
+  }
+  .accordion-item:hover .accordion-item-img {
+    opacity: 1;
+    scale: 1;
+    height: 100%;
+    margin-top: 2.5rem;
+  }
+}
 @media (max-width: 1150px) {
   html {
     font-size: 0.8rem;
@@ -160,7 +162,7 @@ html {
   html {
     font-size: 0.6rem;
   }
-  .bayan-container:hover .accordion-item-icon {
+  .bayan-container .accordion-item-icon {
     opacity: 1;
   }
 }
