@@ -98,9 +98,9 @@ html {
   color: black;
 }
 .expand:checked ~ .item-label .accordion-item-img {
+  height: 15rem;
   opacity: 1;
   scale: 1;
-  height: 100%;
   margin-top: 2.5rem;
 }
 .item-label {
@@ -128,7 +128,6 @@ html {
   transition: 0.2s ease-in;
 }
 .accordion-item-img {
-  width: 10rem;
   height: 0;
   scale: 0;
   opacity: 0;
@@ -147,9 +146,9 @@ html {
     opacity: 1;
   }
   .accordion-item:hover .accordion-item-img {
+    height: 15rem;
     opacity: 1;
     scale: 1;
-    height: 100%;
     margin-top: 2.5rem;
   }
 }
