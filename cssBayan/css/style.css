@@ -53,6 +53,8 @@ html {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
+
+  transition: 0.1s ease-in;
   font-family: "Luckiest Guy", cursive;
   overflow-y: overlay;
 }
@@ -81,13 +83,6 @@ html {
 .bayan-content {
   color: blue;
 }
-
-.bayan-container:hover .bayan-content {
-  color: black;
-}
-.bayan-container:hover .accordion-item-icon {
-  opacity: 1;
-}
 .accordion-item {
   display: flex;
   flex-direction: column;
@@ -102,13 +97,23 @@ html {
 .expand:checked ~ .item-label .accordion-item-title-bar .accordion-item-title {
   color: black;
 }
-.accordion-item:hover .accordion-item-icon,
-.accordion-item:focus .accordion-item-icon {
+.expand:checked ~ .item-label .accordion-item-img {
+  opacity: 1;
+  scale: 1;
+  height: 100%;
+  margin-top: 2.5rem;
+}
+.bayan-container:hover .bayan-content {
+  color: black;
+}
+.bayan-container:hover .accordion-item-icon {
+  opacity: 1;
+}
+.accordion-item:hover .accordion-item-icon {
   transform: rotate(180deg);
   opacity: 1;
 }
-.accordion-item:hover .accordion-item-img,
-.expand:checked ~ .item-label .accordion-item-img {
+.accordion-item:hover .accordion-item-img {
   opacity: 1;
   scale: 1;
   height: 100%;
@@ -129,6 +134,7 @@ html {
   text-transform: uppercase;
   font-size: 2rem;
   transition: 0.2s ease-in;
+  max-width: 80%;
 }
 .accordion-item-icon {
   opacity: 0;
@@ -144,4 +150,22 @@ html {
   opacity: 0;
   align-self: center;
   transition: 0.2s ease-in;
+}
+@media (max-width: 1150px) {
+  html {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 850px) {
+  html {
+    font-size: 0.6rem;
+  }
+  .bayan-container:hover .accordion-item-icon {
+    opacity: 1;
+  }
+}
+@media (max-width: 650px) {
+  html {
+    font-size: 0.4rem;
+  }
 }
