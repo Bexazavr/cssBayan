@@ -1,0 +1,172 @@
+html,
+body,
+div,
+span,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+address,
+em,
+img,
+strong,
+sub,
+sup,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+label,
+details,
+footer,
+header,
+menu,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+ol,
+ul {
+  list-style: none;
+}
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+
+  transition: 0.1s ease-in;
+  font-family: "Luckiest Guy", cursive;
+  overflow-y: overlay;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+.bayan-container {
+  max-width: 60vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.bayan-title {
+  padding: 2.5rem 1.5rem;
+  font-size: 2.8rem;
+}
+.bayan-hr {
+  background-color: grey;
+  height: 0.2rem;
+}
+.bayan-content {
+  color: blue;
+}
+.accordion-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.expand {
+  display: none;
+}
+.expand:checked ~ .item-label .accordion-item-icon {
+  transform: rotate(90deg);
+}
+.expand:checked ~ .item-label .accordion-item-title-bar .accordion-item-title {
+  color: black;
+}
+.expand:checked ~ .item-label .accordion-item-img {
+  height: 15rem;
+  opacity: 1;
+  scale: 1;
+  margin-top: 2.5rem;
+}
+.item-label {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 1.5rem;
+}
+.accordion-item-title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion-item-title {
+  text-transform: uppercase;
+  font-size: 2rem;
+  transition: 0.2s ease-in;
+  max-width: 80%;
+}
+.accordion-item-icon {
+  opacity: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  transform: rotate(45deg);
+  transition: 0.2s ease-in;
+}
+.accordion-item-img {
+  height: 0;
+  scale: 0;
+  opacity: 0;
+  align-self: center;
+  transition: 0.2s ease-in;
+}
+@media (hover: hover) {
+  .bayan-container:hover .bayan-content {
+    color: black;
+  }
+  .bayan-container:hover .accordion-item-icon {
+    opacity: 1;
+  }
+  .accordion-item:hover .accordion-item-icon {
+    transform: rotate(180deg);
+    opacity: 1;
+  }
+  .accordion-item:hover .accordion-item-img {
+    height: 15rem;
+    opacity: 1;
+    scale: 1;
+    margin-top: 2.5rem;
+  }
+}
+@media (max-width: 1150px) {
+  html {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 850px) {
+  html {
+    font-size: 0.6rem;
+  }
+  .bayan-container .accordion-item-icon {
+    opacity: 1;
+  }
+}
+@media (max-width: 650px) {
+  html {
+    font-size: 0.4rem;
+  }
+}
